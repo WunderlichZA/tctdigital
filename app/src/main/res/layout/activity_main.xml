@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout app:barrierAllowsGoneWidgets="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameTextInput"
+            android:layout_width="match_parent"
+            android:layout_marginTop="150dp"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PasswordTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameTextInput">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PasswordTextInput"
+            android:background="@color/colorPrimary"
+            android:text="Login"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+</layout>
